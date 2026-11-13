@@ -1,28 +1,12 @@
-// Name: rao.c
-// Compile: gcc -o rao rao.c -fno-stack-protector -no-pie
-
 #include <stdio.h>
 #include <unistd.h>
 
-void init() {
-  setvbuf(stdin, 0, 2, 0);
-  setvbuf(stdout, 0, 2, 0);
-}
-
-void get_shell() {
-  char *cmd = "/bin/sh";
-  char *args[] = {cmd, NULL};
-
-  execve(cmd, args, NULL);
+void get_shell() {                   //쉘을 실행하는 구현함수
+  .....
 }
 
 int main() {
-  char buf[0x28];        // buf[40] =
-
-  init();
-
-  printf("Input: ");
-  scanf("%s", buf);
-
-  return 0;
+  char buf[0x28];        // buf[40]        
+ 
+  scanf("%s", buf);                // 입력받을 시, scanf같은 경우. 주소값을 넣을 시 수만큼 입력가능 
 }
