@@ -6,7 +6,7 @@ boundary = "=" * 65
 #p = process("./드림핵baby-bof/baby-bof")
 r = remote("host3.dreamhack.games(도메인)", "포트번호(정수값)")
 
-win_location = b"40125b"
+win_location =  # 본인이 실행해보고 넣기
 
 # 프로그램 실행해보거나 c 코드보면 아래와 같이 입력을 받으니, 앞에 텍스트가 나오면 값을 넣도록 하고
 # win함수를 실행해야만 하기 때문에, 코드에서 봤던 name[idx] = hex_value를 할때, 해당 주소를 대입시킴
