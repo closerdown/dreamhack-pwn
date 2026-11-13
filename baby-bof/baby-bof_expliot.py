@@ -1,7 +1,4 @@
 from pwn import *
-import re
-
-boundary = "=" * 65
 
 #p = process("./드림핵baby-bof/baby-bof")
 r = remote("host3.dreamhack.games(도메인)", "포트번호(정수값)")
